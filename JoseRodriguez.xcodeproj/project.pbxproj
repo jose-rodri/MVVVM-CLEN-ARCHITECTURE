@@ -30,6 +30,11 @@
 		54C0729D28444DA600366F5E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C0729B28444DA600366F5E /* HomeViewController.xib */; };
 		54C072A528444DB500366F5E /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C072A428444DB500366F5E /* HomeRouter.swift */; };
 		54C072AC28444EA400366F5E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C072AB28444EA400366F5E /* HomeViewModel.swift */; };
+		54C072B5284451ED00366F5E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C072B4284451ED00366F5E /* LoginRouter.swift */; };
+		54C072BE2844522100366F5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C072BC2844522100366F5E /* LoginViewController.swift */; };
+		54C072BF2844522100366F5E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C072BD2844522100366F5E /* LoginViewController.xib */; };
+		54C072C42844523D00366F5E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C072C32844523D00366F5E /* LoginViewModel.swift */; };
+		54C072C92844525B00366F5E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C072C82844525B00366F5E /* LoginModel.swift */; };
 		BCF1AC09FE63984E99155670 /* Pods_JoseRodriguez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE1532A26DCB8FB2851205 /* Pods_JoseRodriguez.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +92,11 @@
 		54C0729B28444DA600366F5E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		54C072A428444DB500366F5E /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		54C072AB28444EA400366F5E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		54C072B4284451ED00366F5E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		54C072BC2844522100366F5E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		54C072BD2844522100366F5E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		54C072C32844523D00366F5E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		54C072C82844525B00366F5E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		5628479F940F32AEAD486681 /* Pods-JoseRodriguez-JoseRodriguezUITests.releasedev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseRodriguez-JoseRodriguezUITests.releasedev.xcconfig"; path = "Target Support Files/Pods-JoseRodriguez-JoseRodriguezUITests/Pods-JoseRodriguez-JoseRodriguezUITests.releasedev.xcconfig"; sourceTree = "<group>"; };
 		643298256CD6AD8CC723A15C /* Pods-JoseRodriguez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseRodriguez.debug.xcconfig"; path = "Target Support Files/Pods-JoseRodriguez/Pods-JoseRodriguez.debug.xcconfig"; sourceTree = "<group>"; };
 		7BC1ECEFDEFFBBA57A1606CE /* Pods-JoseRodriguezTests.debugprod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseRodriguezTests.debugprod.xcconfig"; path = "Target Support Files/Pods-JoseRodriguezTests/Pods-JoseRodriguezTests.debugprod.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +238,10 @@
 		54C0726128444C8600366F5E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				54C072B3284451D300366F5E /* Model */,
+				54C072B2284451D000366F5E /* View */,
+				54C072B1284451C800366F5E /* ViewModel */,
+				54C072B0284451C400366F5E /* Router */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -327,6 +341,39 @@
 				54C072AB28444EA400366F5E /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54C072B0284451C400366F5E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				54C072B4284451ED00366F5E /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		54C072B1284451C800366F5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54C072C32844523D00366F5E /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54C072B2284451D000366F5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54C072BC2844522100366F5E /* LoginViewController.swift */,
+				54C072BD2844522100366F5E /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54C072B3284451D300366F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54C072C82844525B00366F5E /* LoginModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AF3AA17C9ECCF398FFBE2EDB /* Frameworks */ = {
@@ -447,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C072BF2844522100366F5E /* LoginViewController.xib in Resources */,
 				54C071FB2844483700366F5E /* LaunchScreen.storyboard in Resources */,
 				54C071F82844483700366F5E /* Assets.xcassets in Resources */,
 				54C0729D28444DA600366F5E /* HomeViewController.xib in Resources */,
@@ -577,12 +625,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C072BE2844522100366F5E /* LoginViewController.swift in Sources */,
 				54C0726728444CA700366F5E /* PersistentData.swift in Sources */,
 				54C0728928444D2900366F5E /* Toast.swift in Sources */,
 				54C071EF2844483400366F5E /* AppDelegate.swift in Sources */,
 				54C072AC28444EA400366F5E /* HomeViewModel.swift in Sources */,
+				54C072C92844525B00366F5E /* LoginModel.swift in Sources */,
 				54C0727928444CD100366F5E /* WebService.swift in Sources */,
 				54C072A528444DB500366F5E /* HomeRouter.swift in Sources */,
+				54C072B5284451ED00366F5E /* LoginRouter.swift in Sources */,
 				54C0728A28444D2900366F5E /* UIApplication+TopViewController.swift in Sources */,
 				54C0729C28444DA600366F5E /* HomeViewController.swift in Sources */,
 				54C0727B28444CD100366F5E /* MovieNetwork.swift in Sources */,
@@ -592,6 +643,7 @@
 				54C0727828444CD100366F5E /* Endpoint.swift in Sources */,
 				54C071F12844483400366F5E /* SceneDelegate.swift in Sources */,
 				54C0728828444D2900366F5E /* UIViewController+ActivityIndicator.swift in Sources */,
+				54C072C42844523D00366F5E /* LoginViewModel.swift in Sources */,
 				54C0727A28444CD100366F5E /* ServiceProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
