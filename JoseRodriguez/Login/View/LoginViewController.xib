@@ -114,7 +114,7 @@
                                 <constraint firstAttribute="bottom" secondItem="dZp-xS-tLz" secondAttribute="bottom" constant="12" id="y0D-FX-LoM"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-NF-Rsw" customClass="CustomButton" customModule="Reto_Tecnico_Jose_QR" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-NF-Rsw" customClass="CustomButton" customModule="JoseRodriguez" customModuleProvider="target">
                             <rect key="frame" x="16" y="178" width="343" height="45"/>
                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                             <constraints>

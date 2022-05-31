@@ -10,13 +10,14 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var scense : UIWindowScene?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let  windowsScene = (scene as? UIWindowScene) else { return }
+        scense = windowsScene
         window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = LoginRouter().viewController
         let navController = UINavigationController(rootViewController: viewController)
@@ -57,6 +58,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            
+            let urlString = url.absoluteString
+            print(urlString)
+            let component = urlString.components(separatedBy: "=")
+             
+            component.description.last
+            
+            if component.count > 1 {
+                navigateHome()
+            } else  {
+                navigateLogin()
+            }
+        }
+    }
+    
+    func navigateHome(){
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = HomeRouter().viewController
+        let navController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        window?.windowScene = scense
+    }
+    func navigateLogin(){
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = LoginRouter().viewController
+        let navController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        window?.windowScene = scense
+    }
 }
 

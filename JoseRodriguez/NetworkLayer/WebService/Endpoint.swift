@@ -1,8 +1,8 @@
 //
 //  Endpoint.swift
-//  Reto_Tecnico_Jose_QR
+//  JoseRodriguez
 //
-//  Created by Jose Leoncio Quispe Rodriguez on 4/05/22.
+//  Created by Jose Leoncio Quispe Rodriguez on 31/05/22.
 //
 
 import Foundation

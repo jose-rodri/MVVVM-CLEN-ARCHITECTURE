@@ -1,8 +1,8 @@
 //
 //  MovieNetwork.swift
-//  Reto_Tecnico_Jose_QR
+//  JoseRodriguez
 //
-//  Created by Jose Leoncio Quispe Rodriguez on 5/05/22.
+//  Created by Jose Leoncio Quispe Rodriguez on 30/05/22.
 //
 
 

@@ -33,8 +33,10 @@ class HomeViewController: UIViewController {
         viewModel.bind(view: self, router: router)
         
         tableView.isHidden = true
-        viewModel.getList()
+        viewModel.callList()
+        
         configTable()
+        
         loadTable()
     }
     

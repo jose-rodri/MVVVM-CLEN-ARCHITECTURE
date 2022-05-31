@@ -8,13 +8,14 @@
 import Foundation
 import RxSwift
 
-class ManagerConnections {
+class ManagerConnections : listVideoUseCase, thirdPartyData {
+
     
     private let webService = WebService()
     private let disposeBag = DisposeBag()
     
 
-    func fetchAssignedInfoReportsList(success: @escaping  (Movie) -> Void, failure: @escaping  (String) -> Void) {
+    func getListService(success: @escaping  (Movie) -> Void, failure: @escaping  (String) -> Void) {
         webService.load(modelType: Movie.self, from: .listMovie(serviceType: .MovieList ))
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] results in
@@ -22,8 +23,26 @@ class ManagerConnections {
             }, onError: { [weak self] error in
                 failure("Service error")
             }).disposed(by: disposeBag)
-        
+
     }
+
     
+    func getThirdPartyData(success: @escaping (Movie) -> Void, failure: @escaping (String) -> Void) {
+        /*
+         
+         ....................
+         ....................
+         ....................
+         ....................
+         ....................
+         ....................
+         ....................
+         ....................
+         ....................
+         ....................
+         
+         
+         */
+    }
     
 }

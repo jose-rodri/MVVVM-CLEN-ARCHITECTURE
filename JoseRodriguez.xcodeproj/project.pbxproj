@@ -14,6 +14,9 @@
 		545F901D2845B1C20073DB13 /* loadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F901C2845B1C20073DB13 /* loadImage.swift */; };
 		545F90232845B6750073DB13 /* HomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F90222845B6750073DB13 /* HomeViewDataSource.swift */; };
 		545F902B2845B8F80073DB13 /* HomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F902A2845B8F80073DB13 /* HomeDelegate.swift */; };
+		545F90302845C1350073DB13 /* StaticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F902F2845C1350073DB13 /* StaticVariables.swift */; };
+		545F90602845DD880073DB13 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F905F2845DD880073DB13 /* HomeProtocols.swift */; };
+		545F90652845DDF70073DB13 /* LocalManagerConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F90642845DDF70073DB13 /* LocalManagerConnections.swift */; };
 		54C071EF2844483400366F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C071EE2844483400366F5E /* AppDelegate.swift */; };
 		54C071F12844483400366F5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C071F02844483400366F5E /* SceneDelegate.swift */; };
 		54C071F82844483700366F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C071F72844483700366F5E /* Assets.xcassets */; };
@@ -83,6 +86,9 @@
 		545F901C2845B1C20073DB13 /* loadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadImage.swift; sourceTree = "<group>"; };
 		545F90222845B6750073DB13 /* HomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDataSource.swift; sourceTree = "<group>"; };
 		545F902A2845B8F80073DB13 /* HomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDelegate.swift; sourceTree = "<group>"; };
+		545F902F2845C1350073DB13 /* StaticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticVariables.swift; sourceTree = "<group>"; };
+		545F905F2845DD880073DB13 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		545F90642845DDF70073DB13 /* LocalManagerConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManagerConnections.swift; sourceTree = "<group>"; };
 		54C071EB2844483400366F5E /* JoseRodriguez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoseRodriguez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C071EE2844483400366F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C071F02844483400366F5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +226,14 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		545F90342845D57E0073DB13 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				545F905F2845DD880073DB13 /* HomeProtocols.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		54C071E22844483400366F5E = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				545F90112845AA0E0073DB13 /* HomeCell */,
+				545F90342845D57E0073DB13 /* Common */,
 				54C072A928444E6F00366F5E /* Model */,
 				54C0729828444D9700366F5E /* View */,
 				54C072AA28444E7600366F5E /* ViewModel */,
@@ -333,6 +348,7 @@
 		54C0727228444CC000366F5E /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				545F90642845DDF70073DB13 /* LocalManagerConnections.swift */,
 				54C072D12844739800366F5E /* ManagerConnections.swift */,
 				54C0727328444CC900366F5E /* WebService */,
 			);
@@ -347,6 +363,7 @@
 				54C0727628444CD100366F5E /* ServiceProtocols.swift */,
 				54C0727528444CD100366F5E /* WebService.swift */,
 				54C0730E28447B7B00366F5E /* ErrorResponse.swift */,
+				545F902F2845C1350073DB13 /* StaticVariables.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -718,6 +735,7 @@
 				54C0726728444CA700366F5E /* PersistentData.swift in Sources */,
 				545F90142845AC150073DB13 /* HomeTableViewCell.swift in Sources */,
 				54C073042844759600366F5E /* DetailViewController.swift in Sources */,
+				545F90602845DD880073DB13 /* HomeProtocols.swift in Sources */,
 				54C0728928444D2900366F5E /* Toast.swift in Sources */,
 				54C072D22844739800366F5E /* ManagerConnections.swift in Sources */,
 				54C071EF2844483400366F5E /* AppDelegate.swift in Sources */,
@@ -731,8 +749,10 @@
 				54C0729C28444DA600366F5E /* HomeViewController.swift in Sources */,
 				54C0730A284475A100366F5E /* DetailModel.swift in Sources */,
 				54C0727B28444CD100366F5E /* MovieNetwork.swift in Sources */,
+				545F90302845C1350073DB13 /* StaticVariables.swift in Sources */,
 				54C072F62844756F00366F5E /* DetailRouter.swift in Sources */,
 				545F90232845B6750073DB13 /* HomeViewDataSource.swift in Sources */,
+				545F90652845DDF70073DB13 /* LocalManagerConnections.swift in Sources */,
 				54C0728128444D1300366F5E /* CustomButton.swift in Sources */,
 				54C0726828444CA700366F5E /* PersistentProtocol.swift in Sources */,
 				54C0726E28444CB800366F5E /* Environments.swift in Sources */,

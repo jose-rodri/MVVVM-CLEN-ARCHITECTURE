@@ -29,7 +29,7 @@ final class HomeViewDataSource: NSObject, UITableViewDataSource {
       let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellType, for: indexPath) as!  HomeTableViewCell
         let dataCell = data?[indexPath.row]
         
-        cell.imageMovie.load(urlString: "https://image.tmdb.org/t/p/w200" + dataCell!.posterPath )
+        cell.imageMovie.load(urlString: ConstantsPrivate.baseImage + dataCell!.posterPath )
         cell.titleMovie.text = dataCell?.title
         cell.descriptionM.text = dataCell?.releaseDate
     
