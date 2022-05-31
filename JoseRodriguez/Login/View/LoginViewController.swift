@@ -16,5 +16,12 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         viewModel.bind(view: self, router: router)
     }
+    
+    @IBAction func buttonHomeAction(_ sender: Any) {
+        
+        viewModel.makeViewHome()
+        
+    }
+    
 
 }

@@ -15,8 +15,10 @@ internal enum Endpoint {
 
 internal extension Endpoint {
     func request(with baseURL: URL) -> URLRequest {
-        print("baseURL==> \(baseURL)")
-       
+        print("\n")
+        print("baseURL: \(baseURL)")
+        print("endpoint: \(properties.path)")
+        print("\n")
         let baseURLWithPath = baseURL.appendingPathComponent(properties.path).absoluteString.removingPercentEncoding
 
        
@@ -36,19 +38,6 @@ internal extension Endpoint {
             let jsonString = properties.jsonString
             request.httpBody = jsonString.data(using: String.Encoding.utf8)
         }
-
-        return request
-    }
-    
-    func requestFirebase(with baseURL: URL) -> URLRequest {
-                
-        var newParameters = properties.parameters
-        properties.parameters.forEach { newParameters.updateValue($1, forKey: $0) }
-        
-        let components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false)!
-
-        var request = URLRequest(url: components.url!)
-        request.httpMethod = properties.method.rawValue
 
         return request
     }

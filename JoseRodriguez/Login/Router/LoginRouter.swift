@@ -27,4 +27,9 @@ class LoginRouter {
     }
     
     
+    public  func navigateToHome() {
+          let navHome = HomeRouter().viewController
+          sourceView?.navigationController?.pushViewController(navHome, animated: true)
+      }
+    
 }

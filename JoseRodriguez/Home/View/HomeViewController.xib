@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,25 +10,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="JoseRodriguez" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="clE-ob-7of" id="B1Y-L0-P4R"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="HomeViewController" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elf-bj-jSO">
-                    <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
-                </switch>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="clE-ob-7of">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="elf-bj-jSO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Kin-Hp-Ujr"/>
-                <constraint firstItem="elf-bj-jSO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ubI-kb-cO6"/>
+                <constraint firstItem="clE-ob-7of" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H9p-cB-AlR"/>
+                <constraint firstItem="clE-ob-7of" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="fl7-sh-dL0"/>
+                <constraint firstItem="clE-ob-7of" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ooj-b0-B9r"/>
+                <constraint firstItem="clE-ob-7of" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tVA-M9-zCD"/>
             </constraints>
-            <point key="canvasLocation" x="97" y="88"/>
+            <point key="canvasLocation" x="96.799999999999997" y="87.706146926536732"/>
         </view>
     </objects>
     <resources>

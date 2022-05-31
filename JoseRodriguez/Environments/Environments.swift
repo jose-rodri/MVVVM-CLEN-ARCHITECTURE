@@ -10,8 +10,8 @@ import Foundation
 
 enum BaseURL: String {
     case LOCAL = "https://local.com"
-    case QA = "https://api.themoviedb.org/3/movie/upcoming" //In Use
-    case DEV = "https://dev.com"
+    case QA = "https://qa.com" //In Use
+    case DEV = "https://api.themoviedb.org/3/movie/upcoming"
     case PROD = "https://prod.com"
 }
 

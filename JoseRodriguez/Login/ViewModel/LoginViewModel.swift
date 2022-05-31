@@ -8,6 +8,7 @@
 import Foundation
 
 class LoginViewModel {
+    
     private weak var view: LoginViewController?
     private var router: LoginRouter?
     
@@ -17,5 +18,7 @@ class LoginViewModel {
         self.router?.setSourceView(view)
     }
     
-    
+    func makeViewHome(){
+        router?.navigateToHome()
+    }
 }
